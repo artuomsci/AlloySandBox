@@ -1,0 +1,9 @@
+@startuml
+class System {}
+class Processor {}
+Processor "1" *-- "1" System
+class Kernel {}
+Kernel "0..1" *-- "0..1" System
+Kernel "0..*" *-- "0..*" Processor
+
+@enduml
